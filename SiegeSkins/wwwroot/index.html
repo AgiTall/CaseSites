@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Каталог тактических обликов Siege Vault.">
+  <title>Siege Vault — тактические облики</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%230b0b0d' d='M2 2h28v28H2z'/%3E%3Cpath fill='%23f33a32' d='M7 6h18l-4 6h-8l-2 3h10l4 5-5 6H7l4-6h8l2-3H11l-4-5z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Siege Vault, главная"><span class="brand-mark">S</span><span>SIEGE<br><b>VAULT</b></span></a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="active" href="#catalog">Каталог</a><a href="#drops">Новые дропы</a><a href="#about">О проекте</a>
+    </nav>
+    <button class="loadout" type="button" id="loadoutBtn">МОЙ НАБОР <span id="loadoutCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="drops">
+      <div class="hero-art" role="img" aria-label="Коллекция тактических обликов оружия"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> КОЛЛЕКЦИЯ 09 / BLACK SECTOR</div>
+        <h1>ВЫБЕРИ<br><em>СВОЙ СТИЛЬ</em></h1>
+        <p>Редкие облики. Холодный расчёт. Собери экипировку, которая говорит за тебя до первого выстрела.</p>
+        <a class="cta" href="#catalog">СМОТРЕТЬ КОЛЛЕКЦИЮ <span>↘</span></a>
+      </div>
+      <div class="hero-index"><strong>01</strong><span>/ 03</span><i></i></div>
+      <div class="warning-strip">RESTRICTED ACCESS // AUTHORIZED OPERATORS ONLY // RESTRICTED ACCESS // AUTHORIZED OPERATORS ONLY</div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="section-head">
+        <div><span class="kicker">АРСЕНАЛ / 2026</span><h2>ДОСТУПНЫЕ ОБЛИКИ</h2></div>
+        <p><strong id="resultCount">6</strong> ПОЗИЦИЙ</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Фильтры редкости">
+          <button class="filter active" data-filter="all">ВСЕ</button>
+          <button class="filter" data-filter="legendary">ЛЕГЕНДАРНЫЕ</button>
+          <button class="filter" data-filter="epic">ЭПИЧЕСКИЕ</button>
+          <button class="filter" data-filter="rare">РЕДКИЕ</button>
+        </div>
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Найти облик" autocomplete="off"></label>
+      </div>
+
+      <div class="skin-grid" id="skinGrid">
+        <article class="skin-card featured" data-rarity="legendary" data-name="crimson fault r4-c">
+          <div class="card-visual visual-red"><span class="rarity">ЛЕГЕНДАРНЫЙ</span><span class="serial">// SV-001</span></div>
+          <div class="card-body"><div><small>R4-C / ASH</small><h3>CRIMSON FAULT</h3></div><button class="add" aria-label="Добавить Crimson Fault в набор">+</button></div>
+        </article>
+        <article class="skin-card" data-rarity="legendary" data-name="royal breach 416-c carbine">
+          <div class="card-visual visual-gold"><span class="rarity">ЛЕГЕНДАРНЫЙ</span><span class="serial">// SV-014</span></div>
+          <div class="card-body"><div><small>416-C / JÄGER</small><h3>ROYAL BREACH</h3></div><button class="add" aria-label="Добавить Royal Breach в набор">+</button></div>
+        </article>
+        <article class="skin-card" data-rarity="epic" data-name="violet pulse c8-sfw">
+          <div class="card-visual visual-violet"><span class="rarity">ЭПИЧЕСКИЙ</span><span class="serial">// SV-027</span></div>
+          <div class="card-body"><div><small>C8-SFW / BUCK</small><h3>VIOLET PULSE</h3></div><button class="add" aria-label="Добавить Violet Pulse в набор">+</button></div>
+        </article>
+        <article class="skin-card" data-rarity="epic" data-name="zero signal f2">
+          <div class="card-visual visual-steel"><span class="rarity">ЭПИЧЕСКИЙ</span><span class="serial">// SV-031</span></div>
+          <div class="card-body"><div><small>F2 / TWITCH</small><h3>ZERO SIGNAL</h3></div><button class="add" aria-label="Добавить Zero Signal в набор">+</button></div>
+        </article>
+        <article class="skin-card" data-rarity="rare" data-name="toxic grid smg-11">
+          <div class="card-visual visual-toxic"><span class="rarity">РЕДКИЙ</span><span class="serial">// SV-046</span></div>
+          <div class="card-body"><div><small>SMG-11 / SMOKE</small><h3>TOXIC GRID</h3></div><button class="add" aria-label="Добавить Toxic Grid в набор">+</button></div>
+        </article>
+        <article class="skin-card" data-rarity="rare" data-name="arctic protocol 552 commando">
+          <div class="card-visual visual-arctic"><span class="rarity">РЕДКИЙ</span><span class="serial">// SV-052</span></div>
+          <div class="card-body"><div><small>552 / IQ</small><h3>ARCTIC PROTOCOL</h3></div><button class="add" aria-label="Добавить Arctic Protocol в набор">+</button></div>
+        </article>
+      </div>
+      <div class="empty" id="emptyState" hidden>СОВПАДЕНИЙ НЕ НАЙДЕНО</div>
+    </section>
+
+    <section class="manifest" id="about">
+      <span class="manifest-no">06</span>
+      <p>Каждый облик — это часть истории оператора.</p>
+      <h2>ВХОДИ ТИХО.<br><em>ОСТАВАЙСЯ В ПАМЯТИ.</em></h2>
+      <div class="stats"><div><strong>54</strong><span>ОБЛИКА</span></div><div><strong>18</strong><span>ОПЕРАТОРОВ</span></div><div><strong>09</strong><span>КОЛЛЕКЦИЙ</span></div></div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">ДОБАВЛЕНО В НАБОР</div>
+  <footer><span>© 2026 SIEGE VAULT — ФАН-КОНЦЕПТ</span><span>НЕ ЯВЛЯЕТСЯ ОФИЦИАЛЬНЫМ САЙТОМ UBISOFT</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
